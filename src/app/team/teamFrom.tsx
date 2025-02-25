@@ -59,7 +59,7 @@ const TeamFrom = () => {
 
 
     return (
-        <div className={'flex flex-col items-center space-y-5'}>
+        <div className={'flex flex-col items-center space-y-5 select-none'}>
             <h1 className={'text-center text-16 md:text-3xl font-bold pt-10'}>랜덤 팀 나누기</h1>
 
             <form onSubmit={handleRandomTeam} className={'flex flex-col items-center space-x-2'}>
