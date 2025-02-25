@@ -1,4 +1,5 @@
 import Link from "next/link";
+import MainFrom from "@/app/mainFrom";
 
 export default function Home() {
   return (
@@ -13,7 +14,10 @@ export default function Home() {
         </header>
       <main>
 
+          <MainFrom/>
       </main>
+
+
     </div>
   );
 }
