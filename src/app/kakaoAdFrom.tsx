@@ -1,7 +1,7 @@
 'use client'
 import React, {useEffect, useRef} from 'react';
 
-const MainFrom = () => {
+const KakaoAdFrom = () => {
     const adRef = useRef<boolean>(false);
 
     useEffect(() => {
@@ -41,4 +41,4 @@ const MainFrom = () => {
     );
 };
 
-export default MainFrom;
+export default KakaoAdFrom;
