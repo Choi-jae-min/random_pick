@@ -81,6 +81,14 @@ const TeamFrom = () => {
                     <button className={'border rounded-md px-2 py-1.5 hover:bg-gray-100 transition-colors'} onClick={(event) => {
                         event.preventDefault();
                         if(newMember){
+                            if (!newMember.trim()) {
+                                alert("이름을 입력해주세요.");
+                                return;
+                            }
+                            if (members.includes(newMember)) {
+                                alert("중복된 이름이 있습니다. 각 팀원의 이름은 고유해야 합니다.");
+                                return;
+                            }
                             setMembers([...members ,newMember ])
                             setNewMember('')
                         }
