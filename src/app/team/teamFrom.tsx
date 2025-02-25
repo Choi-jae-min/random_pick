@@ -108,7 +108,7 @@ const TeamFrom = () => {
             </div>
 
             <div className="grid grid-cols-3 gap-4 text-[12px] md:text-[16px]">
-                {teams.length > 0 && teams.map((team, index) => (
+                {teams.length > 1 && teams.map((team, index) => (
                     <div key={index} className="flex flex-col items-center border px-4 py-2.5 rounded-xl">
                         <h2 className="font-bold">팀 {index + 1}</h2>
                         <div className="flex flex-col items-center gap-2">
